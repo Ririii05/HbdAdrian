@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>hbdADI</title>
   <style>
  :root {
@@ -14,47 +14,47 @@
  }
 
     body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background: #2C001E;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      z-index: 1;
-    }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #2C001E;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      pointer-events: none;
-      background-color: #ff408086;
-      background-image:
-        radial-gradient(white 0.8px, transparent 0.8px),
-        radial-gradient(white 1.2px, transparent 1.2px),
-        radial-gradient(white 1.4px, transparent 1.4px),
-        radial-gradient(white 1px, transparent 1px);
-      background-size: 
-        100px 100px, 
-        150px 150px, 
-        120px 120px,
-        200px 200px;
-      background-position: 
-        0 0, 
-        30px 60px, 
-        10px 90px,
-        70px 90px;
-      animation: twinkle 4s ease-in-out infinite alternate;
-      opacity: 0.8;
-      transition: opacity 0.5s;
-    }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-color: #ff408086;
+  background-image:
+    radial-gradient(white 0.8px, transparent 0.8px),
+    radial-gradient(white 1.2px, transparent 1.2px),
+    radial-gradient(white 1.4px, transparent 1.4px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 
+    100px 100px, 
+    150px 150px, 
+    120px 120px,
+    200px 200px;
+  background-position: 
+    0 0, 
+    30px 60px, 
+    10px 90px,
+    70px 90px;
+  animation: twinkle 4s ease-in-out infinite alternate;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
 
     @keyframes twinkle {
       0% {
@@ -614,7 +614,6 @@
     screen3.classList.remove("active");
     screen4.classList.add("active");
     initScreen4Gallery();
-
     
     bgMusic.currentTime = 0;
     bgMusic.play().catch(e => console.warn("Autoplay blocked: ", e));
@@ -658,4 +657,5 @@
 </script>
 </body>
 </html>
+
 
